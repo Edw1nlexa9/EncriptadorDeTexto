@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--Definimos la codificación UTF-8 para representar caracteres en cualquier idioma -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Compatibilidad el navegador -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Habilitar la visualziacion de dispositivos moviles width=device-width para que se ajuste al ancho del dispositivo, y el nivel inicial de escala initial-scale=1.0 se establece para que el contenido se muestre sin ningún zoom inicial-->
+
+    <link rel="stylesheet" href="style.css">  <!--Enlaza el archivo CSS externo llamado "style.css" al documento HTML -->
+
+    <title>Encriptador de texto</title>
+
+</head>
+<body>
+    <div class="inicio">
+        <div class="encriptar"></div>
+            <textarea
+                name="texto" 
+                class="texto" 
+                id="texto" 
+                cols="30" rows="10"
+                placeholder="Ingresa el texto aquí: "></textarea>
+
+        <div class="botones">
+            <button class="BtnEncriptar" type="button" onclick="encriptar()">Encriptar
+            </button>
+            <button class="BtnDesencriptarr" type="button" onclick="desencriptar()">Desencriptar
+            </button>
+        </div>
+        
+    <div>
+        <div class="Cont-encriptado">
+            <img src="" alt="" id="aviso-Enc">
+            <div class="mensaje-encriptado" id="mensaje-encriptado"></div>
+                <h2 id="titulo-mensaje">Ningun mensaje encontrado</h2>
+                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="index.js"></script>
+</html>
